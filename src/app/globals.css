@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Portal-friendly defaults for long-form text */
+html {
+  scroll-behavior: smooth;
+}
+
+/* A11y: visible focus without relying on browser default */
+:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--foreground) 35%, transparent);
+  outline-offset: 2px;
+}
+
+/* Utility-ish classes (kept in CSS to avoid extra deps) */
+.container-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-inline: 1rem;
+}
+
+.prose-portal {
+  line-height: 1.75;
+}
+.prose-portal h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+.prose-portal h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.prose-portal h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.prose-portal p {
+  margin-block: 0.75rem;
+}
+.prose-portal a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-portal code {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+@media print {
+  header,
+  footer,
+  nav[aria-label="Table of contents"] {
+    display: none !important;
+  }
+  .container-page {
+    max-width: none;
+    padding-inline: 0;
+  }
+}
