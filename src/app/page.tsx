@@ -55,8 +55,7 @@ export default function Home() {
             related metadata across the site.
           </Callout>
           <Callout title="Public note">
-            If this is a student or mock-government project, state that clearly
-            on the About page and in the footer disclaimer.
+            project by Chris [Last Name]
           </Callout>
         </div>
       </Section>
