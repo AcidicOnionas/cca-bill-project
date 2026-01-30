@@ -8,7 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-eb-garamond);
+  --font-serif: var(--font-eb-garamond);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,6 +23,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-eb-garamond), "Georgia", "Times New Roman", serif;
 }
 
 /* Portal-friendly defaults for long-form text */

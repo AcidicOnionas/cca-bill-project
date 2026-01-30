@@ -4,7 +4,7 @@ export default function SponsorsPage() {
   return (
     <div className="container-page py-10">
       <div className="prose-portal">
-        <h1>Sponsors</h1>
+        <h1>Letter to representatives</h1>
         <p className="text-black/70 dark:text-white/70">
           Sponsors and contributors associated with{" "}
           <span className="font-medium">{bill.shortTitle}</span>.

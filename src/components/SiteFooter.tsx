@@ -30,11 +30,6 @@ export function SiteFooter() {
                 References
               </Link>
             </li>
-            <li>
-              <Link className="underline underline-offset-4" href="/contact">
-                Contact
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

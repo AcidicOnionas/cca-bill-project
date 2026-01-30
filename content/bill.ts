@@ -49,8 +49,8 @@ export type BillContent = {
 export const bill: BillContent = {
   title: "A Bill to Establish Control of Military Affairs in International Territories",
   shortTitle: "Bill Portal",
-  status: "Draft",
-  lastUpdatedISO: "2026-01-29",
+  status: "Finished",
+  lastUpdatedISO: "2026-01-30",
   summaryParagraphs: [
     ""
   ],
@@ -161,6 +161,11 @@ export const bill: BillContent = {
       dateISO: "2026-01-28",
       label: "Draft published",
       details: "Initial publication of the bill text on this website.",
+    },
+    {
+      dateISO: "2026-01-30",
+      label: "Bill published",
+      details: "Finalized publication of the bill text on this website.",
     },
   ],
   references: [

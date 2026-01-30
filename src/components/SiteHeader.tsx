@@ -4,9 +4,8 @@ import { bill } from "../../content/bill";
 const navItems = [
   { href: "/bill", label: "Bill" },
   { href: "/timeline", label: "Timeline" },
-  { href: "/sponsors", label: "Sponsors" },
+  { href: "/letter", label: "Letter" },
   { href: "/references", label: "References" },
-  { href: "/about", label: "About" },
 ] as const;
 
 export function SiteHeader() {

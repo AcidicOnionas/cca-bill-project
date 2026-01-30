@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { EB_Garamond, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { bill } from "../../content/bill";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ebGaramond = EB_Garamond({
+  variable: "--font-eb-garamond",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ebGaramond.variable} ${geistMono.variable} font-serif antialiased`}
       >
         <a
           href="#main"
