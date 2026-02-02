@@ -184,11 +184,6 @@ export const bill: BillContent = {
     },
     {
       dateISO: "2026-01-29",
-      label: "Peer feedback",
-      details: "Received feedback from classmates and instructor; noted revisions for clarity and structure.",
-    },
-    {
-      dateISO: "2026-01-29",
       label: "Revisions completed",
       details: "Incorporated feedback and finalized section numbering, effective date, and conclusion.",
     },
