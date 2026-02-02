@@ -128,6 +128,13 @@ export const bill: BillContent = {
       heading: "Section 5. Funding",
       body: ["(a) No federal funds may be used to extend a covered military operation in an international territory beyond the sixty (60) day period described in Section 2 unless Congress has enacted specific authorization for such extension.",
         "(b) Funds appropriated for humanitarian operations may be used for immediate response purposes but must be reported to Congress in accordance with Section 3.",
+        "(c) Funding for covered military operations authorized under this Act shall be provided through:",
+        " (1) Amounts appropriated under the annual National Defense Authorization Act and related defense appropriations Acts; and",
+        " (2) The reallocation of existing Department of Defense operational funds, provided that such reallocation does not reduce funding for domestic defense readiness or personnel benefits.",
+        "(d) Any request for additional appropriations to support a covered military operation in an international territory shall include:",
+        " (1) A detailed justification of the necessity of the operation;",
+        " (2) An itemized estimate of projected costs; and",
+        " (3) An explanation of why existing appropriated funds are insufficient.",
       ],
     },
     {
