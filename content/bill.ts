@@ -126,8 +126,8 @@ export const bill: BillContent = {
     {
       id: "funding",
       heading: "Section 5. Funding",
-      body: ["(a) No federal funds may be used to extend a covered military operation in an international territory beyond the sixty (60) day period described in Section 3 unless Congress has enacted specific authorization for such extension.",
-        "(b) Funds appropriated for humanitarian operations may be used for immediate response purposes but must be reported to Congress in accordance with Section 4.",
+      body: ["(a) No federal funds may be used to extend a covered military operation in an international territory beyond the sixty (60) day period described in Section 2 unless Congress has enacted specific authorization for such extension.",
+        "(b) Funds appropriated for humanitarian operations may be used for immediate response purposes but must be reported to Congress in accordance with Section 3.",
       ],
     },
     {
