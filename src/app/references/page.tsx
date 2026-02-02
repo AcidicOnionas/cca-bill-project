@@ -4,9 +4,9 @@ export default function ReferencesPage() {
   return (
     <div className="container-page py-10">
       <div className="prose-portal">
-        <h1>References</h1>
+        <h1>Bibliography</h1>
         <p className="text-black/70 dark:text-white/70">
-          Supporting sources and citations for{" "}
+          Sources for{" "}
           <span className="font-medium">{bill.shortTitle}</span>, in MLA format.
         </p>
       </div>
@@ -54,6 +54,36 @@ export default function ReferencesPage() {
           </li>
         ))}
       </ol>
+
+      <section className="mt-12">
+        <h2 className="text-xl font-semibold tracking-tight text-black dark:text-white">
+          Additional links
+        </h2>
+        <p className="mt-1 text-sm text-black/70 dark:text-white/70">
+          Other information important to this bill.
+        </p>
+        <ul className="mt-4 space-y-2">
+          {bill.references
+            .filter((r) => r.url)
+            .map((r) => (
+              <li key={`link-${r.title}-${r.url}`}>
+                <a
+                  href={r.url}
+                  className="text-black/90 dark:text-white/90 underline underline-offset-4 hover:text-black dark:hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {r.title}
+                </a>
+                {r.container && (
+                  <span className="ml-2 text-sm text-black/60 dark:text-white/60">
+                    ({r.container})
+                  </span>
+                )}
+              </li>
+            ))}
+        </ul>
+      </section>
     </div>
   );
 }
