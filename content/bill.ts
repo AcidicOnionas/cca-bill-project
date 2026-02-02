@@ -23,6 +23,16 @@ export type BillTimelineItem = {
 
 export type BillReference = {
   title: string;
+  /** MLA: author (e.g. "United States") — optional for web sources */
+  author?: string;
+  /** MLA: container/site name (italicized in citation) */
+  container?: string;
+  /** MLA: publisher (often same as container for web) */
+  publisher?: string;
+  /** MLA: publication or post date */
+  date?: string;
+  /** MLA: date accessed (e.g. "30 Jan. 2026") */
+  accessedDate?: string;
   source?: string;
   url?: string;
   note?: string;
@@ -59,7 +69,7 @@ export const bill: BillContent = {
       id: "preamble",
       heading: "Preamble",
       body: [
-        "Be it enacted by the House of Representatives and the United State Senate in Congress assembled, that the following are cited as the International Military Operations Oversight and Accountability Act.",
+        "Be it enacted by the House of Representatives and the United States Senate in Congress assembled, that the following are cited as the International Military Operations Oversight and Accountability Act.",
       ],
     },
     {
@@ -158,22 +168,108 @@ export const bill: BillContent = {
   ],
   timeline: [
     {
+      dateISO: "2026-01-27",
+      label: "Topic chosen",
+      details: "Selected oversight of U.S. military operations in international territories as the bill focus.",
+    },
+    {
+      dateISO: "2026-01-27",
+      label: "Research completed",
+      details: "Reviewed constitutional authority (Article I, Section 8), State Department resources, and existing oversight frameworks.",
+    },
+    {
       dateISO: "2026-01-28",
+      label: "First draft completed",
+      details: "Completed initial draft including definitions, authorization limits, reporting requirements, and funding provisions.",
+    },
+    {
+      dateISO: "2026-01-29",
+      label: "Peer feedback",
+      details: "Received feedback from classmates and instructor; noted revisions for clarity and structure.",
+    },
+    {
+      dateISO: "2026-01-29",
+      label: "Revisions completed",
+      details: "Incorporated feedback and finalized section numbering, effective date, and conclusion.",
+    },
+    {
+      dateISO: "2026-01-29",
       label: "Draft published",
       details: "Initial publication of the bill text on this website.",
     },
     {
       dateISO: "2026-01-30",
       label: "Bill published",
-      details: "Finalized publication of the bill text on this website.",
+      details: "Finalized publication of the bill text, timeline, references (MLA), and letter draft on this website.",
     },
   ],
   references: [
     {
-      title: "US Constitution",
-      source: "Source:",
+      title: "The Constitution of the United States: A Transcription",
+      author: "United States",
+      container: "National Archives",
+      publisher: "National Archives and Records Administration",
       url: "https://www.archives.gov/founding-docs/constitution-transcript",
+      accessedDate: "30 Jan. 2026",
       note: "This legislation is grounded in Congress’s constitutional authority under Article I, Section 8 of the U.S. Constitution.",
+    },
+    {
+      title: "Bureau of Political-Military Affairs",
+      container: "U.S. Department of State",
+      publisher: "U.S. Department of State",
+      url: "https://www.state.gov/bureaus-offices/under-secretary-for-arms-control-and-international-security-affairs/bureau-of-political-military-affairs",
+      accessedDate: "30 Jan. 2026",
+      note: "The Bureau of Political-Military Affairs is the primary agency responsible for overseeing and coordinating United States military operations in international territories.",
+    },
+    {
+      title: "American Foreign and Military Policy",
+      container: "Mershon Center for International Security Studies",
+      publisher: "The Ohio State University",
+      url: "https://mershoncenter.osu.edu/research/american-foreign-and-military-policy",
+      accessedDate: "30 Jan. 2026",
+      note: "American Foreign and Military Policy is a research center at The Ohio State University that studies the relationship between the United States and its foreign policy.",
+    },
+    {
+      title: "War Powers Resolution of 1973",
+      container: "Richard Nixon Presidential Library and Museum",
+      publisher: "National Archives and Records Administration",
+      url: "https://nixonlibrary.gov/news/war-powers-resolution-1973",
+      accessedDate: "30 Jan. 2026",
+      note: "Background on the 1973 War Powers Resolution, which requires presidential consultation with Congress and reporting when U.S. forces are introduced into hostilities; supports the bill’s 60-day and reporting framework.",
+    },
+    {
+      title: "War Powers Resolution: Expedited Procedures in the House and Senate",
+      author: "Congressional Research Service",
+      container: "Congress.gov",
+      publisher: "Library of Congress",
+      url: "https://congress.gov/crs-product/R47603",
+      accessedDate: "30 Jan. 2026",
+      note: "CRS report on congressional procedures under the War Powers Resolution; relevant to authorization and termination provisions in the bill.",
+    },
+    {
+      title: "Overview of Congressional War Powers",
+      container: "U.S. Constitution Annotated",
+      publisher: "Legal Information Institute, Cornell Law School",
+      url: "https://www.law.cornell.edu/constitution-conan/article-1/section-8/clause-1/overview-of-congressional-war-powers",
+      accessedDate: "30 Jan. 2026",
+      note: "Constitutional analysis of Congress’s power to declare war and authorize military force under Article I, Section 8.",
+    },
+    {
+      title: "Defense Primer: Legal Authorities for the Use of Military Forces",
+      author: "Congressional Research Service",
+      container: "EveryCRSReport.com",
+      publisher: "Congressional Research Service",
+      url: "https://www.everycrsreport.com/reports/IF10539.html",
+      accessedDate: "30 Jan. 2026",
+      note: "Primer on legal authorities for use of military force, including declarations of war and statutory authorizations; supports the bill’s legal framework.",
+    },
+    {
+      title: "50 U.S. Code Chapter 33 - War Powers Resolution",
+      container: "U.S. Code",
+      publisher: "Legal Information Institute, Cornell Law School",
+      url: "https://www.law.cornell.edu/uscode/text/50/chapter-33",
+      accessedDate: "30 Jan. 2026",
+      note: "Full text of the War Powers Resolution (1973) as codified in federal law; direct statutory precedent for reporting and time limits in the bill.",
     },
   ],
   contactEmail: "your.email@example.com",
